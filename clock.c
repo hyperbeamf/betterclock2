@@ -49,6 +49,12 @@ main(int argc, char *argv[]) {
     } else if(strcmp(argv[1], "--military") == 0) {
       printf("%s\n", gettime());
       return 0;
+    } else if(strcmp(argv[1], "--militaryns") == 0) {
+      tokens = strtok(gettime(), ":");
+      hour = tokens;
+      tokens = strtok(NULL, ":");
+      printf("%d:%d\n");
+      return 0;
     } else if(strcmp(argv[1], "--seconds") == 0) {
       return twelvehr(1);
     } else {
