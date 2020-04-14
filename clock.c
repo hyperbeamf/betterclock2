@@ -40,6 +40,14 @@ twelvehr(int second) {
   return 0;
 }
 
+void
+militaryns() {
+  tokens = strtok(gettime(), ":");
+  hour = tokens;
+  tokens = strtok(NULL, ":");
+  printf("%d:%d\n");
+}
+
 int
 main(int argc, char *argv[]) {
   if(argc == 2) {
@@ -53,11 +61,8 @@ main(int argc, char *argv[]) {
       printf("%s\n", gettime());
       return 0;
     } else if(strcmp(argv[1], "--militaryns") == 0) {
-      tokens = strtok(gettime(), ":");
-      hour = tokens;
-      tokens = strtok(NULL, ":");
-      printf("%d:%d\n");
       return 0;
+      militaryns()
     } else if(strcmp(argv[1], "--seconds") == 0) {
       return twelvehr(1);
     } else {
