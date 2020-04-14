@@ -9,7 +9,7 @@ gettime() {
   struct tm *ttime;
   time(&time_raw);
   ttime = localtime(&time_raw);
-  char * time_return = strtok(asctime(ttime), " ");
+  char *time_return = strtok(asctime(ttime), " ");
   for(int count = 0; count < 3; count++)
     time_return = strtok(NULL, " ");
   return time_return;
@@ -57,6 +57,7 @@ main(int argc, char *argv[]) {
       printf("--militaryns: print military time without seconds\n");
       printf("--seconds: print 12 hour time with seconds\n");
       printf("--help: print help\n");
+      return 0;
     } else if(strcmp(argv[1], "--military") == 0) {
       printf("%s\n", gettime());
       return 0;
