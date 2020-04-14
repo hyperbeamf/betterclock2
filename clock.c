@@ -46,6 +46,9 @@ main(int argc, char *argv[]) {
     if(strcmp(argv[1], "--help") == 0) {
       printf("betterclock2 help:\n");
       printf("--military: print military time\n");
+      printf("--militaryns: print military time without seconds\n");
+      printf("--seconds: print 12 hour time with seconds\n");
+      printf("--help: print help");
     } else if(strcmp(argv[1], "--military") == 0) {
       printf("%s\n", gettime());
       return 0;
