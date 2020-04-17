@@ -8,3 +8,9 @@ to install betterclock2, run `make` and `sudo make install`
 ## usage
 betterclock2 is controlled using flags, and is ran like `betterclock2 <flag>`
 for more information run `betterclock2 --help`
+
+## Why betterclock2 over betterclock?
+
+Betterclock2 is much faster than the original betterclock
+
+![Hosted by coinsh.red](https://coinsh.red/u/speed_exp.png)

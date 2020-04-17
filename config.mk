@@ -1,4 +1,3 @@
-CC=$CC
 FILE=clock.c
 OUT=betterclock2
 # INSPATH
