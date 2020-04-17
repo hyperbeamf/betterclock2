@@ -1,7 +1,7 @@
 language: c
-addons:
-  apt:
-    packages:
-      - clang
+compiler:
+  - gcc
+  - clang
 script:
-  make
+  - make
+  - ./betterclock2
