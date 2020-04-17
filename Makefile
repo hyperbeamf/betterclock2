@@ -1,9 +1,7 @@
 # This makefile is total shit and will be improved on
-CC=clang
-FILE=clock.c
-OUT=betterclock2
-betterclock2:
-	${CC} ${FILE} -o ${OUT}
+include config.mk
+$(OUT):
+	${CC} --std=c99 ${FILE} -o ${OUT}
 install:
-	mv betterclock2 /usr/bin/
+	mv betterclock2 ${INSPATH}/bin
 .PHONY: install options all
