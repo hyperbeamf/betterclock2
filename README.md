@@ -13,4 +13,4 @@ for more information run `betterclock2 --help`
 
 Betterclock2 is much faster than the original betterclock
 
-![Hosted by coinsh.red](https://coinsh.red/u/speed_exp.png)
+![Hosted by coinsh.red](https://coinsh.red/ipfs/QmdcMD4DFtWnPaZBc7XKN5zAA8sUrX4Xr5tXykYcXJJc92?filename=fixed_example.png)
