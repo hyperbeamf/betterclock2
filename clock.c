@@ -41,7 +41,8 @@ twelvehr(int second) {
 }
 
 void
-militaryns() {
+tfhour() {
+  // name is tfhour because i can't put numbers in strings >:(
   char *tokens = strtok(gettime(), ":");
   char *hour = tokens;
   tokens = strtok(NULL, ":");
@@ -53,18 +54,18 @@ main(int argc, char *argv[]) {
   if(argc == 2) {
     if(strcmp(argv[1], "--help") == 0) {
       printf("betterclock2 help:\n");
-      printf("--military: print military time\n");
-      printf("--militaryns: print military time without seconds\n");
-      printf("--seconds: print 12 hour time with seconds\n");
+      printf("--tfhour: print 24 hour time\n");
+      printf("--tfhours: print 24 hour time with seconds\n");
+      printf("--sec: print 12 hour time with seconds\n");
       printf("--help: print help\n");
       return 0;
-    } else if(strcmp(argv[1], "--military") == 0) {
+    } else if(strcmp(argv[1], "--tfhours") == 0) {
       printf("%s\n", gettime());
       return 0;
-    } else if(strcmp(argv[1], "--militaryns") == 0) {
+    } else if(strcmp(argv[1], "--tfhour") == 0) {
       militaryns();
       return 0;
-    } else if(strcmp(argv[1], "--seconds") == 0) {
+    } else if(strcmp(argv[1], "--sec") == 0) {
       return twelvehr(1);
     } else {
       fprintf(stderr, "flag %s not found\n", argv[1]);
