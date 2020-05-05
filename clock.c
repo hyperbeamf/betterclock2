@@ -63,7 +63,7 @@ main(int argc, char *argv[]) {
       printf("%s\n", gettime());
       return 0;
     } else if(strcmp(argv[1], "--tfhour") == 0) {
-      militaryns();
+      tfhour();
       return 0;
     } else if(strcmp(argv[1], "--sec") == 0) {
       return twelvehr(1);
